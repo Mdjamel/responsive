@@ -283,7 +283,7 @@ body{
 
 .they-say h1{
     font-size: 50px;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
     color: #555;
 }
 
@@ -292,12 +292,52 @@ body{
     padding: 20px;
     margin: 0 0 20px;
     border: 1px solid #ddd;
+    border-radius: 10px;
 }
+
+@media (min-width:768px){
+
+    
+    
+       .they-say .person-say:first-of-type{
+           width: 100%;
+        }
+       
+       .they-say .person-say:not(:first-of-type){
+           width: 49%;
+       }
+
+       .they-say .person-say:last-of-type{
+        margin-left: 2%;
+    }
+
+       
+       
+   }
+   
+
+@media (min-width:992px){
+
+.they-say .person-say:first-of-type{
+    width: 80%;
+    margin-left: 10%
+}
+}
+
+.they-say .person-say h3{
+    margin: 0 0 10px;
+}
+
+.they-say .person-say p{
+    margin: 0;
+    line-height: 2
+}
+
 
 
 /* End What They Say*/
 
-@media (max-width:767px)  /* Mobile and Tablet Rules */
+@media (max-widin:767px) /* Mobile and Tablet Rules */
 {
   .visible-xs{
       display: block !important
