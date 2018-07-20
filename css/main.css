@@ -377,10 +377,57 @@ body{
 
 }
 
-
-
-
 /* End What They Say*/
+/* Start Information */
+
+.information{
+    clear: both;
+    background-color: #ececec;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+.information .info-content > div{
+    padding: 20px;
+    background-color: #FFF;
+    line-height: 2
+
+}
+.information .info-content{
+    margin-bottom: 30px;
+}
+.information .info-content > div:not(:first-of-type){
+    display: none;
+}
+
+.information .h1{
+    font-size: 50px;
+    color: #848484;
+    margin: 10px;
+}
+
+.information .info-list li{
+    display: inline-block;
+    background-color: #DDD;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer
+}
+
+.information .info-list li.selected{
+    background-color: #FFF;
+    color: #22a9bd;
+}
+
+@media (max-width:767px) /* Mobile and Tablet Rules */
+{
+    .information .info-list li{
+    display: block;
+}
+}
+
+/* End Information*/
+
 
 @media (max-width:767px) /* Mobile and Tablet Rules */
 {
