@@ -382,7 +382,7 @@ body{
 
 /* End What They Say*/
 
-@media (max-widin:767px) /* Mobile and Tablet Rules */
+@media (max-width:767px) /* Mobile and Tablet Rules */
 {
   .visible-xs{
       display: block !important
