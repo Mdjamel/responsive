@@ -427,6 +427,29 @@ body{
 }
 
 /* End Information*/
+/* Start footer */
+.foot{
+    color: #EEE;
+    background-color: #333 !important;
+
+}
+
+.foot .copyri,
+.foot .design {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .foot .copyri,
+    .foot .design {
+        width: 50%;
+        
+    }
+        
+}
+
+/* End footer */
 
 
 @media (max-width:767px) /* Mobile and Tablet Rules */
