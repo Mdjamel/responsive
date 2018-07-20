@@ -295,9 +295,25 @@ body{
     border-radius: 10px;
 }
 
-@media (min-width:768px){
+@media (max-width:767px){
+    .they-say .person-say .avatar{
+        float: none !important;
+        margin:auto !important;
+     }
 
-    
+     .they-say .person-say h3{
+        float: none;
+        text-align: center;
+     }
+
+     .they-say .person-say p{
+        float: none !important;
+        width: 100% !important;
+        
+     }
+}
+
+@media (min-width:768px){
     
        .they-say .person-say:first-of-type{
            width: 100%;
@@ -310,10 +326,26 @@ body{
        .they-say .person-say:last-of-type{
         margin-left: 2%;
     }
+       
+ }
 
-       
-       
-   }
+ @media (min-width:768px) and (max-width:991px){
+    .they-say .person-say:not(:first-of-type) .avatar{
+        float: none !important;
+        margin: 0 auto;
+     }
+
+     .they-say .person-say:not(:first-of-type) h3{
+        float: none;
+        text-align: center;
+     }
+
+     .they-say .person-say:not(:first-of-type) p{
+        float: none !important;
+        width: 100%;
+        
+     }
+ }
    
 
 @media (min-width:992px){
@@ -324,14 +356,27 @@ body{
 }
 }
 
+
+.they-say .person-say .avatar{
+    width: 120px;
+    margin-right: 20px;
+    
+    
+}
+
+
+
 .they-say .person-say h3{
-    margin: 0 0 10px;
+    margin: 5px 0 10px;
 }
 
 .they-say .person-say p{
     margin: 0;
-    line-height: 2
+    line-height: 1.7;
+    width: calc(100% - 140px);
+
 }
+
 
 
 
@@ -444,7 +489,7 @@ body{
     display: none;
 }
 
-.reponsive-image{
+.responsive-image{
    width: 100%
 }
 
@@ -454,5 +499,14 @@ padding: 0;
 list-style: none;
 }
 
+
+.img-circle{
+    border-radius: 50%;
+   }
+.img-thumnail{
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC
+}   
 
 /* End My Framework*/
