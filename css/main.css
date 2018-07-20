@@ -10,7 +10,6 @@
 body{
 
     font-family: 'Noto Sans', sans-serif;
-    height: 3000px;
 
 }
 
@@ -431,6 +430,7 @@ body{
 .foot{
     color: #EEE;
     background-color: #333 !important;
+    height: 100px;
 
 }
 
@@ -438,6 +438,14 @@ body{
 .foot .design {
     padding: 20px;
     text-align: center;
+}
+
+@media (max-width:767px){
+    .foot .copyri,
+    .foot .design {
+        width: 100%;
+        
+    }
 }
 
 @media (min-width:768px){
